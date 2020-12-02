@@ -14,7 +14,7 @@ typedef struct CArray {
 
 CArray *getArray(int size);
 
-int get(int position);
+int get(CArray *carray ,int position);
 
 void insertAt(CArray *carray, int position, int value);
 
@@ -24,7 +24,7 @@ void insertAfter(CArray *carray);
 
 void deleteAt(CArray *carray, int position);
 
-void updateAt(CArray *carray, int position);
+void updateAt(CArray *carray, int position, int value);
 
 int indexOf(CArray *carray, int value);
 
